@@ -9,10 +9,14 @@ import UIKit
 
 class ResultViewCountroller: UIViewController {
     
+    
+    
     var number: Int!
     
     @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet var characterImageView: UIImageView!
+    
+    @IBOutlet var label:UILabel!
     
 
     override func viewDidLoad() {
@@ -23,14 +27,36 @@ class ResultViewCountroller: UIViewController {
         if number == 9 {
             characterImageView.image = UIImage(named:"IoTMesh")
             backgroundImageView.image = UIImage(named:"bgBlue")
-        }else if number >= 7 {
+            label.text = "IoTMesh"
+        }else if number == 7 {
             
             characterImageView.image = UIImage(named:"camera")
             backgroundImageView.image = UIImage(named: "bgGreen")
+            label.text = "camera"
+        }else if number == 6 {
+            characterImageView.image = UIImage(named:"designer")
+            backgroundImageView.image = UIImage(named:"bgRed")
+            label.text = "designer"
+        }else if number == 5 {
+            characterImageView.image = UIImage(named:"line")
+            backgroundImageView.image = UIImage(named:"bgRed")
+            label.text = "line"
+        }else if number == 4 {
+            characterImageView.image = UIImage(named:"movie")
+            backgroundImageView.image = UIImage(named:"bgGreen")
+            label.text = "movie"
+        }else if number == 3 {
+            characterImageView.image = UIImage(named:"unity")
+            backgroundImageView.image = UIImage(named:"bgBlue")
+            label.text = "unity"
+        }else if number == 2 {
+            characterImageView.image = UIImage(named:"maya")
+            backgroundImageView.image = UIImage(named:"bgBlue")
+            label.text = "maya"
         }else {
-            
             characterImageView.image = UIImage(named:"iphone")
             backgroundImageView.image = UIImage(named: "bgRed")
+            label.text = "iphone"
         }
         
         

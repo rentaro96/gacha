@@ -51,7 +51,7 @@
                                 <rect key="frame" x="-10" y="0.0" width="413" height="890"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ecf-XE-qRq">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ecf-XE-qRq">
                                 <rect key="frame" x="76" y="331" width="240" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -65,6 +65,13 @@
                                     <action selector="back" destination="1Ue-el-fvA" eventType="touchUpInside" id="Zl0-R9-2mq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkz-Wd-QzL">
+                                <rect key="frame" x="112" y="208" width="168" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZZL-zf-dtV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -72,6 +79,7 @@
                     <connections>
                         <outlet property="backgroundImageView" destination="03A-bO-5ID" id="mNb-Iq-mTg"/>
                         <outlet property="characterImageView" destination="Ecf-XE-qRq" id="9EH-AJ-ds8"/>
+                        <outlet property="label" destination="xkz-Wd-QzL" id="7w0-IL-kKe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vBP-LC-6f2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -83,7 +91,6 @@
         <image name="Presentbox" width="800" height="800"/>
         <image name="bgBlue.png" width="390" height="844"/>
         <image name="gacha.png" width="390" height="844"/>
-        <image name="iphone.png" width="599" height="690"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
