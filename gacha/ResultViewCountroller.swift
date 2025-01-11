@@ -17,46 +17,67 @@ class ResultViewCountroller: UIViewController {
     @IBOutlet var characterImageView: UIImageView!
     
     @IBOutlet var label:UILabel!
+    @IBOutlet var rarelabel:UILabel!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        number = Int.random(in: 0...9)
+        number = Int.random(in: 0...10)
         
         if number == 9 {
             characterImageView.image = UIImage(named:"IoTMesh")
             backgroundImageView.image = UIImage(named:"bgBlue")
-            label.text = "IoTMesh"
+            label.text = "こんにちは"
+            rarelabel.text = "1"
+        }else if number == 10{
+            characterImageView.image = UIImage(named:"ぱっく君")
+            backgroundImageView.image = UIImage(named:"bgGreen")
+            label.text = "ぱっく君"
+            rarelabel.text = "219"
+        }else if number == 8{
+            
+            characterImageView.image = UIImage(named:"Image")
+            backgroundImageView.image = UIImage(named:"bgRed")
+            label.text = "milk"
+            rarelabel.text = "10000"
         }else if number == 7 {
             
             characterImageView.image = UIImage(named:"camera")
             backgroundImageView.image = UIImage(named: "bgGreen")
             label.text = "camera"
+            rarelabel.text = "10"
         }else if number == 6 {
             characterImageView.image = UIImage(named:"designer")
             backgroundImageView.image = UIImage(named:"bgRed")
             label.text = "designer"
+            rarelabel.text = "2"
         }else if number == 5 {
             characterImageView.image = UIImage(named:"line")
             backgroundImageView.image = UIImage(named:"bgRed")
             label.text = "line"
+            rarelabel.text = "3"
         }else if number == 4 {
             characterImageView.image = UIImage(named:"movie")
             backgroundImageView.image = UIImage(named:"bgGreen")
             label.text = "movie"
+            rarelabel.text = "4"
         }else if number == 3 {
             characterImageView.image = UIImage(named:"unity")
             backgroundImageView.image = UIImage(named:"bgBlue")
             label.text = "unity"
+            rarelabel.text = "5"
         }else if number == 2 {
             characterImageView.image = UIImage(named:"maya")
             backgroundImageView.image = UIImage(named:"bgBlue")
             label.text = "maya"
+            rarelabel.text = "6"
         }else {
             characterImageView.image = UIImage(named:"iphone")
             backgroundImageView.image = UIImage(named: "bgRed")
             label.text = "iphone"
+            rarelabel.text = "7"
+       
         }
         
         

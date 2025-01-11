@@ -72,6 +72,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="レア度：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qiu-jK-pWw">
+                                <rect key="frame" x="76" y="681" width="120" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="０" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs8-xn-izJ">
+                                <rect key="frame" x="204" y="681" width="117" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZZL-zf-dtV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -80,6 +94,7 @@
                         <outlet property="backgroundImageView" destination="03A-bO-5ID" id="mNb-Iq-mTg"/>
                         <outlet property="characterImageView" destination="Ecf-XE-qRq" id="9EH-AJ-ds8"/>
                         <outlet property="label" destination="xkz-Wd-QzL" id="7w0-IL-kKe"/>
+                        <outlet property="milklabel" destination="zs8-xn-izJ" id="4hK-oJ-Nlb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vBP-LC-6f2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
