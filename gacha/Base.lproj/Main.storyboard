@@ -94,7 +94,7 @@
                         <outlet property="backgroundImageView" destination="03A-bO-5ID" id="mNb-Iq-mTg"/>
                         <outlet property="characterImageView" destination="Ecf-XE-qRq" id="9EH-AJ-ds8"/>
                         <outlet property="label" destination="xkz-Wd-QzL" id="7w0-IL-kKe"/>
-                        <outlet property="milklabel" destination="zs8-xn-izJ" id="4hK-oJ-Nlb"/>
+                        <outlet property="rarelabel" destination="zs8-xn-izJ" id="gjB-0n-7Ov"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vBP-LC-6f2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
