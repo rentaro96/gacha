@@ -23,62 +23,36 @@ class ResultViewCountroller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       
+        
+        let gachaData: [Int: (imageName:String,bgImageName:String,labelText:String,rareValue: String)] = [
+            9: ("IoTMesh", "bgBlue", "こんにちは", "1"),
+            10: ("ぱっく君", "bgGreen", "ぱっく君", "219"),
+            8: ("Image", "bgRed", "milk", "10000"),
+            7: ("camera", "bgGreen", "camera", "10"),
+            6: ("designer", "bgRed", "designer", "2"),
+            5: ("line", "bgRed", "line", "3"),
+            4: ("movie", "bgGreen", "movie", "4"),
+            3: ("unity", "bgBlue", "unity", "5"),
+            2: ("maya", "bgBlue", "maya", "6"),
+            1: ("iphone", "bgRed", "iphone", "7")
+        ]
         number = Int.random(in: 0...10)
         
-        if number == 9 {
-            characterImageView.image = UIImage(named:"IoTMesh")
-            backgroundImageView.image = UIImage(named:"bgBlue")
-            label.text = "こんにちは"
-            rarelabel.text = "1"
-        }else if number == 10{
-            characterImageView.image = UIImage(named:"ぱっく君")
-            backgroundImageView.image = UIImage(named:"bgGreen")
-            label.text = "ぱっく君"
-            rarelabel.text = "219"
-        }else if number == 8{
-            
-            characterImageView.image = UIImage(named:"Image")
-            backgroundImageView.image = UIImage(named:"bgRed")
-            label.text = "milk"
-            rarelabel.text = "10000"
-        }else if number == 7 {
-            
-            characterImageView.image = UIImage(named:"camera")
-            backgroundImageView.image = UIImage(named: "bgGreen")
-            label.text = "camera"
-            rarelabel.text = "10"
-        }else if number == 6 {
-            characterImageView.image = UIImage(named:"designer")
-            backgroundImageView.image = UIImage(named:"bgRed")
-            label.text = "designer"
-            rarelabel.text = "2"
-        }else if number == 5 {
-            characterImageView.image = UIImage(named:"line")
-            backgroundImageView.image = UIImage(named:"bgRed")
-            label.text = "line"
-            rarelabel.text = "3"
-        }else if number == 4 {
-            characterImageView.image = UIImage(named:"movie")
-            backgroundImageView.image = UIImage(named:"bgGreen")
-            label.text = "movie"
-            rarelabel.text = "4"
-        }else if number == 3 {
-            characterImageView.image = UIImage(named:"unity")
-            backgroundImageView.image = UIImage(named:"bgBlue")
-            label.text = "unity"
-            rarelabel.text = "5"
-        }else if number == 2 {
-            characterImageView.image = UIImage(named:"maya")
-            backgroundImageView.image = UIImage(named:"bgBlue")
-            label.text = "maya"
-            rarelabel.text = "6"
+        if let selected = gachaData[number] {
+            characterImageView.image = UIImage(named: selected.imageName)
+            backgroundImageView.image = UIImage(named:selected.bgImageName)
+            label.text = selected.labelText
+            rarelabel.text = selected.rareValue
         }else {
-            characterImageView.image = UIImage(named:"iphone")
-            backgroundImageView.image = UIImage(named: "bgRed")
-            label.text = "iphone"
-            rarelabel.text = "7"
-       
+            characterImageView.image = UIImage(named:"defaultImage")
+            backgroundImageView.image = UIImage(named:"defaultBG")
+            label.text = "デフォルト"
+            rarelabel.text = "0"
+            
         }
+       
+        
         
         
 
