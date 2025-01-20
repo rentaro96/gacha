@@ -27,8 +27,8 @@ class ResultViewCountroller: UIViewController {
         
         let gachaData: [Int: (imageName:String,bgImageName:String,labelText:String,rareValue: String)] = [
             9: ("IoTMesh", "bgBlue", "こんにちは", "1"),
-            10: ("ぱっく君", "bgGreen", "ぱっく君", "219"),
-            8: ("Image", "bgRed", "milk", "10000"),
+            10: ("ぱっく君", "bgGreen", "ぱっく君", "2190"),
+            8: ("Image", "bgRed", "みるく", "10000"),
             7: ("camera", "bgGreen", "camera", "10"),
             6: ("designer", "bgRed", "designer", "2"),
             5: ("line", "bgRed", "line", "3"),
